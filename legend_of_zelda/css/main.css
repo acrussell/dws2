@@ -1,0 +1,224 @@
+/* Aric Russell
+   8/6/2014
+   Designing for Web Standards II
+   Week 1 */
+
+/* --------------------- Margin and Padding Resets --------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+}
+cite {
+    font-style: normal;
+}
+/* --------------------- Basic Styling ----------------------- */
+
+body {
+    font-family: "Pontano Sans", Arial, sans-serif;
+    color: #FFF8E7;
+    background: #CFCBD0 url("../img/rough_wall_texture.jpg") repeat top left;
+    line-height: 1.45em;
+    font-size: 1em;
+}
+#wrapper {
+    background: rgba(103, 98, 92, .55);
+    border: 1px solid #5395ff;
+    box-shadow: 2px 2px #3c5994;
+    border-radius: 2px;
+}
+h1 {
+    font-family: "Noto Serif", "Times New Roman", serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+h1,h2 {
+    color: #00942A;
+    text-shadow: 1px 1px #244028;
+}
+h3 {
+    color: #BBFFC4;
+    text-shadow: 1px 1px #335938;
+    font-size: 1.25em;
+}
+h2 {
+    border-bottom: 2px solid #25669f;
+    background: url("../img/triforce.png") no-repeat;
+    padding: 0 0 1.554404145078% 2.487046632124%;
+    font-size: 1.4em;
+}
+cite a {
+    color: #770000;
+}
+footer > h2, footer p {
+    text-align: right;
+    background: none;
+}
+/* -------------------- Basic Layout ------------------------ */
+
+#wrapper {
+    margin: 2.53807106599% auto;
+    width: 96%;
+    padding: 1.015228426936%;
+    overflow: auto;
+}
+nav li {
+    display: inline;
+    padding-left: 3.6%;
+}
+nav {
+    width: 57.98787645%;/*625px;*/
+    margin: .8% auto;
+    font-size: .9em;
+}
+nav ul {
+    margin: .8% auto;
+    padding: 0;
+}
+img[class="logo"] {
+    max-width: 400px;
+    float: right;
+    width: 44.620355411955%;
+    margin-left: 0.98765%;
+}
+#main_content {
+    margin-top: 25px;
+}
+#overview {
+    clear: both;
+}
+/* ---------------------- Link styling ------------------------ */
+
+li > a, cite > a {
+    text-decoration: none;
+}
+li > a:link {
+    color: #990000;
+}
+li > a:visited {
+     color: #990055;
+ }
+li > a:hover {
+    color: #c10000;
+}
+li > a:active {
+    color: #FF0000;
+}
+cite > a:link {
+    color: #770000;
+}
+cite > a:visited {
+     color: #990055;
+ }
+cite > a:hover {
+    color: #a10000;
+}
+cite > a:active {
+    color: #d80000;
+}
+
+
+/* --------------------- Table Styling ------------------------ */
+
+#history tr:nth-child(odd){
+    background-color: rgba(59, 56, 57, .75);
+}
+#history tr:nth-child(even){
+    background-color: rgba(76, 73, 74, .75);
+
+}
+#history tr:first-child{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #00942A;
+    text-shadow: 1px 1px #244028;
+}
+#history tr:hover{
+    background-color: #70b9ff;
+}
+#history table {
+    width: 33.678756476684%; /*325px;*/
+    border: 1px solid #5395ff;
+    box-shadow: 2px 2px #3c5994;
+    border-collapse: collapse;
+}
+#history td:nth-of-type(odd){
+    padding: .615384615385% 0 .615384615385% 1.538461538462%;
+    text-align: left;
+}
+#history td:nth-of-type(even){
+    text-align: right;
+    padding: .615384615385% 1.538461538462% .615384615385% 0;
+}
+#history td:nth-of-type(n){
+    border: 1px solid #25669f;
+}
+
+/* ------------------------ Media Queries -------------------- */
+
+@media screen and (min-width: 1025px) {
+    nav {
+        width: 45.45676%;
+    }
+    #history table {
+        width: 34.99768%;
+    }
+}
+@media screen and (max-width: 960px) {
+    nav {
+        width: 65.98675%;
+    }
+    #history table {
+        width: 50.875685%;
+        font-size: .95em;
+    }
+    #history tr:first-child {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 840px) {
+    nav {
+        width: 45.96889%;
+    }
+    #history table {
+        width: 54.98457743%;
+    }
+}
+@media screen and (max-width: 550px) {
+    nav {
+        width: 60.987657%;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    p, li, cite {
+        font-size: .9em;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 440px) {
+    img[class="logo"] {
+        max-width: 0;
+    }
+    nav {
+        width: 100%;
+    }
+    #history table {
+        width: 100%;
+    }
+    p {
+        width: 96%;
+    }
+}
