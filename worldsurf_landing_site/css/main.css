@@ -71,10 +71,10 @@ th {
     color: #f4f0c3;
     border: 1px solid #ff5600;
 }
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background-color: rgba(59, 56, 57, .9);
 }
-tr:nth-child(even) {
+tr:nth-child(even), thead tr {
     background-color: rgba(76, 73, 74, .9);
 }
 tr:hover {
