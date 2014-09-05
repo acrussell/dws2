@@ -56,7 +56,6 @@ h2, th{
 }
 /*-------------------------------------------  table -------------------------------------------------------*/
 table {
-	background: #546572;  /*changes color of the background of the table*/
 	border-collapse: collapse;
 	width: 100%;
     box-shadow: 4px 3px 3px #B24B4B;;
