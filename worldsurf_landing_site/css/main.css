@@ -109,7 +109,7 @@ figure img{
 	width: 100%;
 }
 img[class="img_scale"] {
-    width: 85%;
+    width: 65%;
     margin: 1% auto;
     display: block;
 
@@ -129,16 +129,16 @@ section[class="main"] figure img {
     transition: all .5s ease;
 }
 section[class="main"] figure img:hover {
-    -webkit-transform: scale(1.155);
-    -moz-transform: scale(1.155);
-    -ms-transform: scale(1.55);
-    -o-transform: scale(1.155);
-    transform: scale(1.155);
-    -webkit-box-shadow: 2px 2px 3px #8294A9;
-    -moz-box-shadow: 2px 2px 3px #8294A9;
-    -ms-box-shadow: 2px 2px 3px #8294A9;
-    -o-box-shadow: 2px 2px 3px #8294A9;
-    box-shadow: 2px 2px 3px #8294A9;
+    -webkit-transform: scale(1.14);
+    -moz-transform: scale(1.14);
+    -ms-transform: scale(1.14);
+    -o-transform: scale(1.14);
+    transform: scale(1.14);
+    -webkit-box-shadow: 2px 2px 3px #d4d4de;
+    -moz-box-shadow: 2px 2px 3px #d4d4de;
+    -ms-box-shadow: 2px 2px 3px #d4d4de;
+    -o-box-shadow: 2px 2px 3px #d4d4de;
+    box-shadow: 2px 2px 3px #d4d4de;
 }
 
 /*-------------------------------------------  links -------------------------------------------------------*/
